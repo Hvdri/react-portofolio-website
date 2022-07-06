@@ -1,10 +1,10 @@
 import React from 'react'
 import './Footer.css'
 
-function Header() {
+function Footer() {
   return (
-    <div>Header</div>
+    <div>Footer</div>
   )
 }
 
-export default Header
+export default Footer

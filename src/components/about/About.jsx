@@ -1,9 +1,8 @@
-import React from 'react';
-import './About.css';
+import React from 'react'
+import './About.css'
 
 function About() {
-  return 
-  (
+  return (
     <div>About</div>
   )
 }

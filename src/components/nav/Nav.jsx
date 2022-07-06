@@ -1,10 +1,21 @@
 import React from 'react'
 import './Nav.css'
 
-function Header() {
+function Nav() {
   return (
-    <div>Header</div>
+    
+
+      <div className="nav-container">
+
+        {/* make a button */}
+        <button className="btn">
+          <a href="a">About</a>
+        </button>
+
+      </div>  
+
+
   )
 }
 
-export default Header
+export default Nav
