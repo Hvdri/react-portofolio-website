@@ -1,0 +1,41 @@
+nav {
+    width: max-content;
+    display: block;
+    padding: 0.7 1.7;
+    z-index: 2;
+    position: fixed;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    bottom: 2rem;
+    display: flex;
+
+    gap: 1rem;
+    border-radius: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    
+    background: rgba(0, 0, 0, 0.4);
+    transition: var(--transition);
+    backdrop-filter: blur(15px);
+}
+
+nav a {
+    border-radius: 1.5rem;
+    background: transparent;
+    padding: 0.8rem;
+    display: flex;
+    color: var(--color-blue2);
+    font-size: 1.2rem;
+    
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.275);
+    
+}
+
+nav a.active {
+    background: rgba(0, 0, 0, 0.4);
+    color: var(--color-blue2);
+}

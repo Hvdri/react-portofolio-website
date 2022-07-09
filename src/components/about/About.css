@@ -1,0 +1,30 @@
+ .img {
+    width: 100px;
+    border-radius: 2rem;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        var(--color-blue2),
+        transparent
+    );
+    transition: transform 330ms ease-in-out;
+}
+
+.img:hover {
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);  
+
+}
+
+.container {
+    height: 100vh;
+}
+  .img {
+    width: 250px;
+    margin: 30px 30px 30px 0;
+    float: left;
+  }
+  .container_text {
+    display: inline;
+  }

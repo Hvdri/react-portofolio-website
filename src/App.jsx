@@ -14,13 +14,13 @@ function App() {
     <>
 
         <Header/>
-        <Nav />
         <About />
         <Experience />
         <Services />
         <Testimonials />
         <Contact />
         <Footer />
+        <Nav />
 
     </>
   )

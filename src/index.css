@@ -12,22 +12,27 @@
 
 /* DEFINE GLOBAL VALUES (COLORS) */
 :root{
+  --color-white2: #fff;
+  --color-white: #F7FFF7;
+  --color-black: #0B0014;
   --color-bg: #1f1f38;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-red: #ff0000;
-  --color-green: #00ff00;
-  --color-blue: #0000ff;
+  --color-blue2: #00a2ed;
+  --color-blue: #2541B2;
 
-  --conainer-width-lg: 75%;
-  --conainer-width-md: 86%;
-  --conainer-width-sm: 90%;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 
   --transition: all 400ms ease;
 }
 
 html{
   scroll-behavior: smooth;
+  background-image: url('./assets/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 ::-webkit-scrollbar{
@@ -41,13 +46,17 @@ body{
 
   line-height: 1.7;
   background-image: url('./assets/background.jpg');
-  
+  /* no repeat */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 /* ============================================ */
 
-.container{
-  width: var(--conainer-width-lg);
+body{
+  width: var(--container-width-lg);
   margin: 0 auto;
 }
 
@@ -57,6 +66,7 @@ h1, h2, h3, h4{
 
 section{
   margin-top: 8rem;
+  height: 1vh;
 }
 
 section > h2, section > h5{
@@ -70,37 +80,37 @@ section > h2{
 }
 
 .text-light{
-  color: var(--color-green);
+  color: var(--color-white);
 }
 
 a{
-  color: var(--color-white);
+  color: var(--color-bg);
   transition: var(--transition);
 }
 
 a:hover{
-  color: var(--color-blue);
+  color: var(--color-white2);
 }
 
 .btn{
   width: max-content;
   display: inline-block;
-  color: var(--color-white);
+  color: var(--color-blue2);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-blue2);
   transition: var(--transition);
 }
 
 .btn:hover{
-  background: var(--color-white);
+  background: var(--color-blue2);
   color: var(--color-bg);
   border-color: transparent;
 }
 
 .btn-primary{
-  background: var(--color-red);
+  background: var(--color-blue2);
   color: var(--color-bg);
 }
 
@@ -110,16 +120,20 @@ img{
   object-fit: cover;
 }
 
-/* ================== MEDIUM DEVICES ================== */
+
+
+/* MEDIA QUERIES */
+
+/* ==================  MEDIUM DEVICES ================== */
 
 @media screen and (max-width: 1024px){
-  .container{
-    width: var(--conainer-width-md);
-
-  }
-
   section{
     margin-top: 6rem;
+  }
+  
+  body{
+    width: var(--container-width-md);
+
   }
 
 }
@@ -127,13 +141,13 @@ img{
 /* ================== SMALL DEVICES ================== */
 
 @media screen and (max-width: 600px){
-  .container{
-    width: var(--conainer-width-sm);
-
-  }
-
   section{
     margin-top: 2rem;
   }
 
+  body{
+    width: var(--container-width-sm);
+
+  }
 }
+

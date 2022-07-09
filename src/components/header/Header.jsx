@@ -16,15 +16,17 @@ function Header() {
         <h5 className="text-light">Web Developer</h5>
 
         <CTA />
-        <HeaderSocials />
 
         <div className='me'>
 
+          <HeaderSocials />
           <img src={ME} alt="me" />
 
         </div>
-
+        
         <a href="#contact" className="scroll_down">Scroll Down</a>
+
+        
 
       </div>
 
