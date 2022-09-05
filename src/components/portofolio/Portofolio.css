@@ -9,6 +9,58 @@
 
 .portofolio-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.portofolio-item {
+    background: var(--color-bg);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+
+    transition: var(--transition);
+}
+
+.portofolio-item:hover {
+    border-color: var(--color-primary);
+    background: transparent;
+}
+
+.portofolio-item-image {
+    border-radius: 0.5rem;
+    overflow:hidden;
+}
+
+.portofolio-item h3 {
+    letter-spacing: 4px;
+    font-size: x-large;
+    font-weight: 500;
+    margin: 1.2rem 0 0.2rem;
+}
+
+.portofolio-item-cta {
+    text-align: center;
+    gap: 1rem;
+}
+
+/* ===================== MEDIA QUERIS (MEDIUM) ================ */
+
+@media screen and (max-width: 1024px) {
+
+    .portofolio-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+}
+
+/* ===================== MEDIA QUERIS (SMALL) ================ */
+
+@media screen and (max-width: 600px) {
+    
+    .portofolio-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
 }

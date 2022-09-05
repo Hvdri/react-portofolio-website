@@ -43,9 +43,6 @@
 /* ===================== MEDIA QUERIS (MEDIUM) ================ */
 
 @media screen and (max-width: 1024px) {
-    .about_container {
-        /*  */
-    }
 
     .container_text{
         width: 80%;
