@@ -1,10 +1,131 @@
 import React from 'react'
 import './Experience.css'
+import { BsFillPatchCheckFill } from 'react-icons/bs'
 
 const Experience = () => {
   return (
   
-    <section id='experience'></section>
+    <section id='experience'>
+      <h5>The Skills That I Have</h5>
+      <h2>My Experience</h2>
+
+      <div className='experience-container'>
+
+        <div className='experience-frontend'>
+          <h3>Front-End Development</h3>
+          <div className='experience-content'>
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>HTML</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>CSS</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>JAVASCRIPT</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>REACT</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>TAILWIND</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>BOOTSTRAP</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+          </div>
+        </div>
+
+
+        <div className='experience-backend'>
+          <h3>Back-End Development</h3>
+          <div className='experience-content'>
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>HTML</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>CSS</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>JAVASCRIPT</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>REACT</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>TAILWIND</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+            <article className='experience-details'>
+              <BsFillPatchCheckFill className='experience-details-icon'/>
+              <div>
+                <h4>BOOTSTRAP</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
   
     )
 }

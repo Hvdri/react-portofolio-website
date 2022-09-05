@@ -8,6 +8,7 @@ import Services from './components/services/Services'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Portofolio from './components/portofolio/Portofolio'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Experience />
         <Services />
+        <Portofolio />
         <Testimonials />
         <Contact />
         <Footer />
