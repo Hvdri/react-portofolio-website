@@ -1,7 +1,8 @@
 #portofolio {
-    padding: 0;
-    height: 100vh;
-    width: 100%;
+    padding-top: 3rem;
+    margin-top: 200px;
+    margin-bottom: 50px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,13 +18,14 @@
     background: var(--color-bg);
     padding: 1.2rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 1.5px solid transparent;
 
-    transition: var(--transition);
+    transition: all 400ms ease;
 }
 
 .portofolio-item:hover {
-    border-color: var(--color-primary);
+    border: 1px solid;
+    border-color: var(--color-blue2);
     background: transparent;
 }
 

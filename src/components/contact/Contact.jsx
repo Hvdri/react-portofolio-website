@@ -1,9 +1,27 @@
 import React from 'react';
 import './Contact.css';
 
-import { AiOutlineMail, AiOutlineWhatsApp, AiOutlineInstagram, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
+import { AiOutlineMail, AiOutlineWhatsApp, AiFillLinkedin, AiOutlineGithub } from 'react-icons/ai'
+
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_jfmo0is', 'template_yrujhkw', form.current, 'rTSNSvW0Q-x_ghTN5')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
+
   return (
     <section id='contact'>
       <h5>Get In Touch</h5>
@@ -38,19 +56,14 @@ const Contact = () => {
             </a>
           </article> 
 
-          <article className='contact-options-items'>
-            <a href="https://www.linkedin.com/in/horia-andrei-marinescu-8a9543223/" target='blank'>
-            <AiOutlineInstagram className='contact-options-icon'/>
-            <h4>Instagram</h4>
-            </a>
-          </article>     
+              
         </div> 
 
-          <form action=''>
+          <form ref={form} onSubmit={sendEmail}>
             <input type='text' name='name' placeholder='Name' required/>
             <input type='email' name='email' placeholder='Email' required/>
-            <textarea name='message' placeholder='Your Message' rows='7' required></textarea>
-            <button className='btn' type='submit'></button>
+            <textarea name='message' placeholder='Your Message' rows='1' required></textarea>
+            <button className='btn2' type='submit'>Submit</button>
           </form>
       </div>
     </section>
