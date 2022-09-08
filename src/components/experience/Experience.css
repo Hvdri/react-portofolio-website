@@ -15,7 +15,7 @@
 }
 
 .experience-container > div {
-    background: var(--color-black);
+    background: var(--color-blue2);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
@@ -24,12 +24,18 @@
 
 .experience-container > div:hover {
     background: transparent;
-    border: 1px solid var(--color-blue2);
+    border: 1px solid var(--color-white2);
     cursor: default;
 }
 
+.experience-container > div:hover .experience-details-text  {
+    color: var(--color-white2);
+}
+.experience-container > div:hover .experience-details-icon {
+    color: var(--color-blue2);
+}
+
 .experience-container > div h3 {
-    color: var(--color-white);
     margin-bottom: 2rem;
     font-size: 1.6rem;
     font-weight: 500;
@@ -49,9 +55,12 @@
 
 .experience-details-icon {
     margin-top: 6px;
-    color: var(--color-blue2);
+    color: rgb(9, 255, 0);
 }
 
+.experience-details-text {
+    color: var(--color-black);
+}
 /* ===================== MEDIA QUERIS (MEDIUM) ================ */
 
 @media screen and (max-width: 1024px) {

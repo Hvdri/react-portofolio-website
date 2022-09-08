@@ -1,9 +1,15 @@
 footer {
+    margin-bottom: 6.8rem;
+
     background: var(--color-blue2);
     padding: 3rem 0;
     text-align:  center;
     font-size: 0.9rem;
     margin-top: 7rem;
+
+
+    margin-left: -100vh;
+    margin-right: -100vh;
 }
 
 footer a {
@@ -45,4 +51,24 @@ footer a {
     background: transparent;
     color: var(--color-bg);
     border-color: var(--color-bg);
+}
+
+/* ===================== MEDIA QUERIS (MEDIUM) ================ */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* ================== SMALL DEVICES ================== */
+
+@media screen and (max-width: 600px){
+
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-socials {
+        margin-bottom: 2.6rem;
+    }
 }

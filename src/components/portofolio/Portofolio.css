@@ -25,7 +25,7 @@
 
 .portofolio-item:hover {
     border: 1px solid;
-    border-color: var(--color-blue2);
+    border-color: var(--color-white2);
     background: transparent;
 }
 
