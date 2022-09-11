@@ -1,9 +1,9 @@
 footer {
-    margin-bottom: 6.8rem;
+    /* margin-bottom: 6.8rem; */
 
     background: var(--color-blue2);
     padding: 3rem 0;
-    text-align:  center;
+    text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
 

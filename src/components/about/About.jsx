@@ -16,9 +16,10 @@ const About = () => {
 
           <div className='container_text'>
             
-            <p>lorem ipsum aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa
-              sadsasdd sadad sa dkasd lajdlalkdja kldja dkla ladj sk dlka dlak ladjsa  sajskadkas dak d
-              asdad dsa dakd asdad asdadad.
+            <p>I am 20 years old, a second year student.<br></br> <br></br>
+            I like to learn new things and I want to be part of a community of people that can teach me how to improve.<br></br> <br></br>
+            For now, I'm just starting out, but I'm planning to grow professionally and become an effective employee. <br></br><br></br>
+            I like teamwork and I will not hesitate to share my ideas or ambiguities that I have.
             </p>
       
           </div>
